@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <!-- I added the Correct styling file for this page. -->
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+    <!-- I first made a title for the page.  -->
     <title>Black Jack</title>
+    <!-- Then I did a big heading to display the which game and describle the page. -->
     <h1>Black jack (21s)</h1>
+    <!-- I created paragrapghs with hardcoded text to start structure for game. This contents will be changed using variables in JS for flexibilty. -->
+    <!-- The format for the names is first the name of the Job being done and then add whatever it's going to be used for. For example info-el is the informational message used to give player informative text and el is short for Element because its element will be stored in a variable using JS.  -->
+    <!-- The data-cy is for testing in Cypress. -->
+    <!-- Info was created to give player message input to make game more interactive and playable. -->
     <p data-cy="infoElCy" id="info-el">Info</p>
+    <!-- Cards was created to show the player each card number that's collected. -->
     <p data-cy="cardsCy" id="card-el">Cards:</p>
+    <!-- Total was created to show the players total sum of all their collected cards. -->
     <p data-cy="totalHandEl" id="totalhand-el">Total</p>
+    <!-- I created a Start button to begin the game since it seems strange to already having the first two cards. Now the game will start when the button is clicked.  -->
         <button data-cy="startGameCy" class="start" id="startGame-btn" onclick="startGame()">START</button>
+        <!-- I created this button to allow the player to collect one new card when the button is clicked. -->
         <button data-cy="newCardCy" class="newCard" onclick="newCard()">NEW CARD</button>
-        <button data-cy="holdStandCy" class="Hold" onclick="holdStand()">HOLD / STAND</button>   
+        <!-- I created this button to allow the player to hold/stand when this button is clicked and ending the game. When the total scored of the cards the players wants to keep-->
+        <button data-cy="holdStandCy" class="Hold" onclick="holdStand()">HOLD / STAND</button> 
+    <!-- I created this end game text so that when the game end the player is asked if they would like to play this game again to give visaul confirmation that the game has ended. This is still currently being worked on.  -->
     <p data-cy="endGameCy" id="endGame-el">Would you like to play again?</p>   
     <script src="BlackJack.js"></script>
 
