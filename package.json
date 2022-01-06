@@ -1,0 +1,17 @@
+{
+  "name": "bbc-blackjack-interview",
+  "version": "1.0.0",
+  "description": "my frist test in cypress",
+  "main": "BlackJack.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aaron Coburn",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.2.0"
+  }
+}

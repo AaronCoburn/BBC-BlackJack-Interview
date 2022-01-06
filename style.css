@@ -1,0 +1,14 @@
+body{
+    padding: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: green;
+    color: greenyellow;
+    text-align: center;
+}
+h1{
+    font-size: 3rem;
+    color: greenyellow;
+}
+#endGame{
+    visibility: hidden;
+}

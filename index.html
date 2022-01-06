@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <title>Black Jack</title>
+    <h1>Black jack (21s)</h1>
+    <p data-cy="infoElCy" id="info-el">Info</p>
+    <p data-cy="cardsCy" id="card-el">Cards:</p>
+    <p data-cy="totalHandEl" id="totalhand-el">Total</p>
+        <button data-cy="startGameCy" class="start" id="startGame-btn" onclick="startGame()">START</button>
+        <button data-cy="newCardCy" class="newCard" onclick="newCard()">NEW CARD</button>
+        <button data-cy="holdStandCy" class="Hold" onclick="holdStand()">HOLD / STAND</button>   
+    <p data-cy="endGameCy" id="endGame-el">Would you like to play again?</p>   
+    <script src="BlackJack.js"></script>
+
+    <script src="chai.js" type="text/javascript"></script>
+</body>
+</html>
